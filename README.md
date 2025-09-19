@@ -28,7 +28,7 @@ This is a responsive multipage website template built with HTML, CSS, and vanill
 ## How to run locally
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOURNAME/YOUR-REPO.git
+   git clone (https://github.com/CannibalOx5994/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git)
    cd YOUR-REPO
 
 2. Open index.html in your browser, or run a simple HTTP server:
