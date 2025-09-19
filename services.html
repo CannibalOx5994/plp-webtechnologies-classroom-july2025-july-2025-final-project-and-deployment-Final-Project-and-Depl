@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Multipage Site</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">My Website</a>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <h1>Services</h1>
+      <div class="services-grid">
+         <img src="images/services1.jpg" alt="Web design service" class="service-icon">
+        <article class="service-card">
+          <h3>Web Design</h3>
+          <p>Responsive, accessible, and fast landing pages and portfolios.</p>
+        </article>
+        <article class="service-card">
+          <h3>Frontend Development</h3>
+          <p>JavaScript-powered interactions, component-based UI.</p>
+        </article>
+        <article class="service-card">
+          <h3>Deployment & DevOps</h3>
+          <p>CI/CD, hosting, and straightforward deployment to cloud providers.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-services"></span> My Website</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

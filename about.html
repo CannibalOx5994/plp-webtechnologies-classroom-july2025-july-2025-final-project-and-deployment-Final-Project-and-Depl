@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Multipage Site</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">My Website</a>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-section">
+      <h1>About</h1>
+      <p>This page describes the purpose, values, and the mission of the business or personal portfolio. Use this space to explain your background and approach.</p>
+            <!-- about image -->
+  <img src="images/about-team.jpg" alt="random image" class="about-img">   
+
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2024</h3>
+          <p>Project started — MVP and basic features launched.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025</h3>
+          <p>Improved design, responsive layouts, user feedback incorporated.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-about"></span> MyWebsite</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

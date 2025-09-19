@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multipage Site — Home</title>
+  <meta name="description" content="Portfolio / Product showcase — responsive multipage site." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">My Website</a>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO section with an image-->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <img src="images/hero-photo.jpg" alt="Team working on a project" class="hero-img">
+        <h1 class="hero-title">Build. Design. Ship.</h1>
+        <p class="hero-sub">A small, responsive multipage template that showcases services and collects leads.</p>
+        <div class="hero-cta">
+          <a class="btn" href="services.html">Explore Services</a>
+          <a class="btn btn-secondary" href="contact.html">Get in touch!</a>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+    <!-- FEATURES -->
+    <section class="container features" id="features">
+      <article class="feature card">
+        <h3>Responsive</h3>
+        <p>Designed to adapt to mobile, tablet and desktop screens.</p>
+      </article>
+      <article class="feature card">
+        <h3>Interactive</h3>
+        <p>JS-powered interactions: toggle nav, form validation, animations.</p>
+      </article>
+      <article class="feature card">
+        <h3>Deployable</h3>
+        <p>Ready for GitHub Pages, Netlify, or Vercel deployment.</p>
+      </article>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to start your project?</h2>
+        <a class="btn" href="contact.html">Request a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MySite — Built with HTML, CSS & JS</p>
+      <small>Designed accessibly; responsive and lightweight.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

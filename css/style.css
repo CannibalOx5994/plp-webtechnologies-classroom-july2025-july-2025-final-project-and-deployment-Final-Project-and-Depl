@@ -1,0 +1,86 @@
+/* ============================
+   Base / Utility
+   ============================ */
+:root{
+  --accent: #0066ff;
+  --muted: #666;
+  --bg: #c6ffa9;
+  --card: #8db3ff;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:var(--bg); }
+.container { width: 92%; max-width: 1100px; margin: 0 auto; }
+
+/* Header */
+.site-header { background: #c8ff97; border-bottom: 1px solid #eee; position: sticky; top:0; z-index: 20; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+.logo { font-weight:700; color:var(--accent); text-decoration:none; font-size:1.1rem; }
+.nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.nav a { text-decoration:none; color:inherit; padding:6px 8px; border-radius:6px; }
+.nav a[aria-current="page"] { background:var(--card); font-weight:600; }
+
+/* Mobile nav */
+.nav-toggle { display:none; background:none; border:0; font-size:1.3rem; cursor:pointer; }
+
+/* Hero */
+.hero { padding:64px 0; background: linear-gradient(180deg,#f7fbff, #fff); text-align:center; }
+.hero-title { font-size:2rem; margin:0 0 8px; }
+.hero-sub { color:var(--muted); margin:0 0 18px; max-width:700px; margin-left:auto; margin-right:auto; }
+.btn { display:inline-block; padding:10px 16px; background:var(--accent); color:#fff; border-radius:8px; text-decoration:none; }
+.btn-secondary { background:#e9f1ff; color:var(--accent); margin-left:8px; border:1px solid #dbe9ff; }
+
+/* Features */
+.features { display:grid; grid-template-columns: repeat(3,1fr); gap:18px; margin: 28px 0; }
+.card { background:var(--card); padding:18px; border-radius:var(--radius); box-shadow: 0 6px 18px rgba(25,25,25,0.03); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(25,25,25,0.06); }
+
+/* CTA band */
+.cta-band { background:#0b72ff; color:white; padding:28px 0; text-align:center; border-radius:8px; margin: 30px 8px; }
+.cta-band .btn { background: #fff; color: var(--accent); }
+
+/* Services grid */
+.services-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
+.service-card { padding:16px; border-radius:8px; background:linear-gradient(180deg,#fff,#fafcff); border:1px solid #f0f4ff; transition: transform .25s ease; }
+.service-card:hover { transform: translateY(-6px); }
+
+/* Page sections */
+.page-section { padding:40px 0; }
+
+/* Timeline */
+.timeline { display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; }
+.timeline-item { background:var(--card); padding:12px; border-radius:8px; width:220px; }
+
+/* Contact form */
+form { max-width:640px; margin: 12px auto 40px; text-align:left; }
+form label { display:block; margin:8px 0 4px; font-weight:600; }
+form input, form textarea { width:100%; padding:10px; border-radius:8px; border:1px solid #ddd; }
+.form-actions { margin-top:12px; }
+.form-feedback { margin-top:10px; font-weight:600; }
+
+/* Footer */
+.site-footer { border-top:1px solid #69ff33f0; padding:18px 0; margin-top:30px; background:#fff; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+
+/* Responsive */
+@media (max-width:900px){
+  .features, .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width:700px){
+  .features, .services-grid { grid-template-columns: 1fr; }
+  .nav { position: absolute; right: 12px; top:64px; background:rgb(187, 255, 170); border:1px solid #eee; padding:8px; display:none; border-radius:8px; }
+  .nav.open { display:block; }
+  .nav ul { flex-direction:column; gap:0.5rem; }
+  .nav-toggle { display:block; }
+}
+
+/* reveal animation */
+.card, .service-card { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
+.card.visible, .service-card.visible { opacity: 1; transform: translateY(0); }
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
