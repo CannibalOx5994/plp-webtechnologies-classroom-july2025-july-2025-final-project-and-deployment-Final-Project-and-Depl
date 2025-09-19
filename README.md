@@ -32,6 +32,7 @@ This is a responsive multipage website template built with HTML, CSS, and vanill
    cd YOUR-REPO
 
 2. Open index.html in your browser, or run a simple HTTP server:
+3. here is the live url from github pages; https://cannibalox5994.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
 # Python 3
 python -m http.server 8000
